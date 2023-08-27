@@ -27,15 +27,18 @@ calculateButton.addEventListener('click', ()=> {
     if(isNaN(radius)) {
         let errorText = "Please Input The Correct Radius"
         ErrorMessage.textContent = errorText
+        ErrorMessage.style.color = "red"
     } else {
         const area = calculateCircleArea(radius)
         const perimeter = calculateCirclePerimeter(radius)
         const diameter = calculateCircleDiameter(radius)
 
-        ErrorMessage.textContent = ""
+        ErrorMessage.textContent = `Radius:- ${radius}`
+        ErrorMessage.style.color = "black"
         areaResultElement.textContent = `The area of the circle is ${area.toFixed(2)}`
         perimeterResultElement.textContent = `The perimeter of the circle is ${perimeter.toFixed(2)}`
         diameterResultElement.textContent = `The diameter of the circle is ${diameter}`
+        radiusInput.value = ""
     }
     
 }) 

@@ -52,10 +52,6 @@ button:hover {
   background-color: #083e79;
 }
 
-#ErrorMessage {
-  color: red;
-}
-
 li.result {
   font-size: 15px;
   margin-top: 8px;
