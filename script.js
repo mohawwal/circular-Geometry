@@ -28,6 +28,9 @@ calculateButton.addEventListener('click', ()=> {
         let errorText = "Please Input The Correct Radius"
         ErrorMessage.textContent = errorText
         ErrorMessage.style.color = "red"
+        areaResultElement.textContent = ""
+        perimeterResultElement.textContent = ""
+        diameterResultElement.textContent = ""
     } else {
         const area = calculateCircleArea(radius)
         const perimeter = calculateCirclePerimeter(radius)
